@@ -15,7 +15,8 @@ const (
 func main() {
 	ebiten.SetWindowSize(screenW, screenH)
 	ebiten.SetWindowTitle("Tic-Tac-Go")
-	if err := ebiten.RunGame(tggame.Create()); err != nil {
+
+	if err := ebiten.RunGame(tggame.Create(screenW, screenH)); err != nil {
 		log.Fatal(err)
 	}
 }
