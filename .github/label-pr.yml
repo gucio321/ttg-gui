@@ -1,6 +1,6 @@
 - regExp: [".*\\.md+$", "docs"]
   labels: ["documentation"]
-- regExp: "go\\.mod"
+- regExp: [ "go\\.mod", "go\\.sum" ]
   labels: ["dependencies"]
 - regExp: ".*\\.github"
   labels: ["workflow"]
@@ -11,11 +11,7 @@
 - regExp: "LICENSE"
   labels: ["LICENSE", "danger-zone"]
 
-- regExp: ["ttggame"]
+- regExp: "tggame"
   labels: ["game engine"]
-- regExp: ["ttgmenu"]
-  labels: ["menu engine"]
-- regExp: ["main.go", "danger-zone"]
-  labels: ["main.go"]
-- regExp: ["ttggame/ttgpcplayer"]
-  labels: ["AI-logic"]
+- regExp: "main.go"
+  labels: ["main.go", "danger-zone"]
