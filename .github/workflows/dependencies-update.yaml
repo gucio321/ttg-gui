@@ -1,20 +1,20 @@
 name: Update golang dependencies
 
-on:
+on: 
   schedule:
     - cron: '0 12 * * *'
   workflow_dispatch:
 
-    jobs:
-      createPullRequest:
-        runs-on: ubuntu-latest
+jobs:
+  createPullRequest:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
       - name: Set up LibGL, Mesa & X11 libraries
         run: |
           sudo apt-get --allow-releaseinfo-change update
-
+          sudo apt-get install -y libgtk-3-dev libasound2-dev libxxf86vm-dev
       - name: Set up Go
         uses: actions/setup-go@v2.1.3
         with:
@@ -35,7 +35,7 @@ on:
           echo 'diffs<<EOF' >> $GITHUB_ENV
           cat /tmp/output.txt >> $GITHUB_ENV
           echo 'EOF' >> $GITHUB_ENV
-
+      
       - if: env.update-success > 0
         uses: nickderobertis/check-if-issue-exists-action@master
         id: check_if_issue_exists
@@ -54,7 +54,7 @@ on:
           body: |
             Hi there!
             GitHub action found an issues while updating golang dependencies.
-          the full stack trace is here:
+            the full stack trace is here:
             ```
             ${{ env.diffs }}
             ```
@@ -75,7 +75,7 @@ on:
           body: |
             Hi there!
             Automatic GitHub action is updating your golang dependencies successfully!
-          the full logs are posted below:
+            the full logs are posted below:
             ```
             ${{ env.diffs }}
             ```
