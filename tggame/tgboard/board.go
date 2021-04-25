@@ -3,6 +3,7 @@ package tgboard
 import (
 	"bytes"
 	"image"
+	_ "image/png" // it is used by image.Decode (without this the Decode crashes)
 	"log"
 
 	"github.com/hajimehoshi/ebiten/v2"
@@ -18,11 +19,13 @@ const (
 	separator  = 20
 )
 
+// Board represents a game board
 type Board struct {
 	*ttgboard.Board
 	imgX, imgO *ebiten.Image
 }
 
+// New creates a new board
 func New(w, h, c int) *Board {
 	result := &Board{}
 	result.Board = ttgboard.NewBoard(w, h, c)
@@ -31,21 +34,25 @@ func New(w, h, c int) *Board {
 	if err != nil {
 		log.Fatal(err)
 	}
+
 	result.imgX = ebiten.NewImageFromImage(img)
 
 	img, _, err = image.Decode(bytes.NewReader(tgassets.ImageO))
 	if err != nil {
 		log.Fatal(err)
 	}
+
 	result.imgO = ebiten.NewImageFromImage(img)
 
 	return result
 }
 
+// Draw draws the board
 func (b *Board) Draw(screen *ebiten.Image) {
 	for y := 0; y < b.Width(); y++ {
 		for x := 0; x < b.Height(); x++ {
 			var img *ebiten.Image
+
 			switch b.GetIndexState(b.Width()*y + x) {
 			case ttgletter.LetterX:
 				img = b.imgX
