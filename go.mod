@@ -5,7 +5,7 @@ go 1.16
 require (
 	github.com/go-gl/glfw/v3.3/glfw v0.0.0-20210715014612-ab6297867137 // indirect
 	github.com/gucio321/tic-tac-go v0.0.0-20210612094443-a2c4b3c436bc
-	github.com/hajimehoshi/ebiten/v2 v2.1.3
+	github.com/hajimehoshi/ebiten/v2 v2.1.4
 	golang.org/x/exp v0.0.0-20210715201039-d37aa40e8013 // indirect
 	golang.org/x/image v0.0.0-20210628002857-a66eb6448b8d // indirect
 	golang.org/x/mobile v0.0.0-20210716004757-34ab1303b554 // indirect

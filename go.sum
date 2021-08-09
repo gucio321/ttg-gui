@@ -103,8 +103,8 @@ github.com/grpc-ecosystem/grpc-gateway v1.9.5/go.mod h1:vNeuVxBJEsws4ogUvrchl83t
 github.com/gucio321/tic-tac-go v0.0.0-20210612094443-a2c4b3c436bc h1:X9J77pis1pIlsuEbFO1GS+wu8h46qk7RM+4BsYDA7AM=
 github.com/gucio321/tic-tac-go v0.0.0-20210612094443-a2c4b3c436bc/go.mod h1:EKeWxAfsQ405hWRXsdW1tvYVy8hxEthxYt9Z+OYCYyI=
 github.com/hajimehoshi/bitmapfont/v2 v2.1.3/go.mod h1:2BnYrkTQGThpr/CY6LorYtt/zEPNzvE/ND69CRTaHMs=
-github.com/hajimehoshi/ebiten/v2 v2.1.3 h1:xuypQF0A3tOfepWKqUUvVxJH06UCkLghJBolIUxUFoo=
-github.com/hajimehoshi/ebiten/v2 v2.1.3/go.mod h1:mpAvpmTRbMdhQDZplZ4rfEogRhdsfAGTC0zLhxawKHY=
+github.com/hajimehoshi/ebiten/v2 v2.1.4 h1:ok1sjnDUm1VHVRvI4HEHzk7CjAsnNj/dqIo2/ObGcy4=
+github.com/hajimehoshi/ebiten/v2 v2.1.4/go.mod h1:mpAvpmTRbMdhQDZplZ4rfEogRhdsfAGTC0zLhxawKHY=
 github.com/hajimehoshi/file2byteslice v0.0.0-20200812174855-0e5e8a80490e/go.mod h1:CqqAHp7Dk/AqQiwuhV1yT2334qbA/tFWQW0MD2dGqUE=
 github.com/hajimehoshi/go-mp3 v0.3.2/go.mod h1:qMJj/CSDxx6CGHiZeCgbiq2DSUkbK0UbtXShQcnfyMM=
 github.com/hajimehoshi/oto v0.6.1/go.mod h1:0QXGEkbuJRohbJaxr7ZQSxnju7hEhseiPx2hrh6raOI=
