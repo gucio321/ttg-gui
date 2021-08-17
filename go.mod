@@ -3,11 +3,11 @@ module github.com/gucio321/ttg-gui
 go 1.16
 
 require (
-	github.com/go-gl/glfw/v3.3/glfw v0.0.0-20210715014612-ab6297867137 // indirect
-	github.com/gucio321/tic-tac-go v0.0.0-20210612094443-a2c4b3c436bc
+	github.com/go-gl/glfw/v3.3/glfw v0.0.0-20210727001814-0db043d8d5be // indirect
+	github.com/gucio321/tic-tac-go v0.0.0-20210809162839-cfe98746c71b
 	github.com/hajimehoshi/ebiten/v2 v2.1.4
-	golang.org/x/exp v0.0.0-20210715201039-d37aa40e8013 // indirect
+	golang.org/x/exp v0.0.0-20210812203943-8c280c88aa00 // indirect
 	golang.org/x/image v0.0.0-20210628002857-a66eb6448b8d // indirect
 	golang.org/x/mobile v0.0.0-20210716004757-34ab1303b554 // indirect
-	golang.org/x/sys v0.0.0-20210630005230-0f9fa26af87c // indirect
+	golang.org/x/sys v0.0.0-20210816183151-1e6c022a8912 // indirect
 )
