@@ -1,3 +1,6 @@
+## THIS REPOSITORY IS DEPRECATED
+
+the repository content will be moved into [gucio321/tic-tac-go](https://github.com/gucio321/tic-tac-go)
 ## Description
 
 ttg-gui (stands for Tic-Tac-Go-GUI) is a simple wrapper
